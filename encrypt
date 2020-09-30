@@ -9,7 +9,7 @@ public static void EncryptFile(string originalFile, string encryptedFile, string
 
             byte[] keyBytes = new byte[originalBytes.Length];
             Random random = new Random();
-            random.NextBytes(keyBytes); // создаем одноразовый ключ длинной 
+            random.NextBytes(keyBytes); 
 
             //Записываем ключ в файл
             using (FileStream fs = new FileStream(keyFile, FileMode.Create))
@@ -27,7 +27,7 @@ public static void EncryptFile(string originalFile, string encryptedFile, string
             }
  public static void Vern(byte[] inBytes, byte[] keyBytes, ref byte[] outBytes){
             
-            if ((inBytes.Length != keyBytes.Length) ||(keyBytes.Length != outBytes.Length))throw new ArgumentException("нинада так!");
+            if ((inBytes.Length != keyBytes.Length) 
            
             for (int i = 0; i < inBytes.Length; i++)
                 outBytes[i] = (byte)(inBytes[i] ^ keyBytes[i]);
