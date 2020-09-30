@@ -24,8 +24,7 @@ Window x:Class="scam.MainWindow"
         <Button x:Name="Enc" Content="Зашифровать" HorizontalAlignment="Left" Margin="83,259,0,0" VerticalAlignment="Top" Height="39" Width="122" Click="Button_Click" FontStyle="Italic" FontSize="14"/>
         <TextBlock x:Name="T_Box" HorizontalAlignment="Left" Margin="85,49,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" Height="188" Width="357" FontFamily="Arial" FontStyle="Italic" OpacityMask="#C4000000" Foreground="#FF032767" FontSize="14" Opacity="0.75" Background="{DynamicResource {x:Static SystemColors.InfoBrushKey}}"><Run Language="ru-ru" Text="Ввести текст"/></TextBlock>
         <Button Content="Загрузить фаил" HorizontalAlignment="Left" Margin="80,311,0,0" VerticalAlignment="Top" Height="33" Width="125" FontStyle="Italic" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Left" Height="185" Margin="495,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="435" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
-        <Button Content="Сохрнаить" HorizontalAlignment="Left" Height="30" Margin="510,259,0,0" VerticalAlignment="Top" Width="90" FontStyle="Italic" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="185" Margin="495,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="435" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/
         <TextBox HorizontalAlignment="Left" Height="30" Margin="215,314,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" RenderTransformOrigin="0.045,0.669"/>
 
     </Grid>
