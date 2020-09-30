@@ -17,7 +17,7 @@ public static void EncryptFile(string originalFile, string encryptedFile, string
                 fs.Write(keyBytes, 0, keyBytes.Length);//записываем ключ в фаил
             }
 
-            // Шифрование данных с помощью алгоритма Вернама 
+           
             byte[] encryptedBytes = new byte[originalBytes.Length];
             DoVernam(originalBytes, keyBytes, ref encryptedBytes);
             // Записываемзашифрованныйфай
@@ -25,3 +25,10 @@ public static void EncryptFile(string originalFile, string encryptedFile, string
             {
                 fs.Write(encryptedBytes, 0, encryptedBytes.Length);
             }
+ public static void Vern(byte[] inBytes, byte[] keyBytes, ref byte[] outBytes){
+            
+            if ((inBytes.Length != keyBytes.Length) ||(keyBytes.Length != outBytes.Length))throw new ArgumentException("нинада так!");
+           
+            for (int i = 0; i < inBytes.Length; i++)
+                outBytes[i] = (byte)(inBytes[i] ^ keyBytes[i]);
+    }
